@@ -47,6 +47,11 @@ table {
 	border-spacing: 0;
 }
 
+a{
+	text-decoration: none;
+}
+	
+
 
 /* my custom css*/
 
@@ -65,23 +70,20 @@ table {
 
 h1{
 	font-size: 72px;
-	text-trasform: uppercase;
+	text-transform: uppercase;
 	font-weight: bold;
 	font-family: 'Playfair Display', serif;
+	color:#ffffff;
 }
 
 h2{
 	font-size: 44px;
-	text-trasform: uppercase;
 	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
 }
+
 
 h3{
-	font-size: 26px;
-	font-family: 'Playfair Display', serif;
-}
-
-h4{
 	font-size: 24px;
 	font-family: 'Playfair Display', serif;
 	line-height: 60px;
@@ -89,9 +91,15 @@ h4{
 
 p{
 	font-size: 20px;
-	font-family: 'Open Sans', sans-serif;
-	line-height: 30px;
+	font-family:'Open Sans', sans-serif;
+	line-height:30px;
+	margin-bottom: 30px;
 }
+
+h1, h2, h3 {
+	margin-bottom: 30px;
+}
+
 
 
 /****************MENU****************/
@@ -100,138 +108,395 @@ p{
 	width: 100%;
 	height: 100px;
 	background-color:#383d40;
-	
+	position:fixed;
+	top:0;
+	z-index: 1;
 }
-
 #header-menu-content{
-	width: 1138px;
+	width: 1140px;
 	padding-left: 15px;
 	padding-right: 15px;
 	height: 100px;
 	margin-left: auto;
 	margin-right: auto;
-	
+	position: relative;
 }
 
+#header-logo{
+	weight:145px;
+	height:55px;
+	float:left;
+	position: absolute;
+	top: 50%;
+	margin-top: -27.5px;
+	margin-left:15px;
+}
+
+
+#voci-menu{
+	width:700px;
+	height: 24px;
+	margin-top:46px;
+	float:right;
+	text-align:center;
+}
 #header-menu-content nav ul li {
 	display: inline-block;
-	width: 80px;
-	padding: 5px;
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	margin-left:20px;
 }
 
-#header-menu-content nav ul{
-	float: right;
-}
 
 #header-menu-content nav ul li a{
-	color: white;
+	color: #FFFFFF;
 	text-decoration: none;
+	font-size: 22px;
+	font-family: 'Playfair Display', serif;
 }
-
-.active{
-	color: #e1df31;
-}
-
 
 #header-menu-content nav ul li a:hover{
 	color: #e1df31;
 }
 
+#header-menu-content nav ul li .active{
+	color: #e1df31;
+}
+
+
+
 /****************INTRO IMAGE****************/
 
 #intro-image{
 	height:500px;
-	width:100%;
-	background-color: blue; 
+	width:100%; 
+	background-image: url("images/home/schermatacamerahome.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:cover;
+	margin-top:100px;
+	position: relative;
+}
+#intro-text{
+	position: absolute;
+	left:40%;
+	margin-left:-384px;
+	top:40%;
+}
+#intro-malm-acronimo{
+	position: absolute;
+	right:40%;
+	margin-right:-384px;
+	top:15%;
 }
 
 /****************SECTION CONTENT****************/
 #content-wrapper{
 	background-color: #e7e7e7;
+	height:600px;
+	width:100%;
+	
 }
 
 #main-content{
-	width: 1138px;
+	width:1140px;
+	height: 410px;
 	padding-left: 15px;
 	padding-right: 15px;
-	height: 100px;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+	
+#left-text{
+	width: 555px;
+	height: 410px;
+	float:left;
+	position: relative;
+		
+}
+#left-text-content{
+	height: 330px;
+	text-align:left;
+	top: 50%;
+	margin-top:-165px;
+	position: absolute;
 }
 
 
+
+#right-image{
+	float:right;
+}
+
 /****************SECTION SECONDARY CONTENT****************/
+secondary-content-wrapper{
+	width: 100%;
+	height: 570px;
+	background-color:#ffffff;
+	
+}
 
 #secondary-content{
 	width: 1140px;
 	padding-left: 15px;
 	padding-right: 15px;
-	height: 600px;
+	height: 390px;
 	margin-left: auto;
 	margin-right: auto;
+	text-align:center;
+	padding-top: 90px;
+	padding-bottom: 90px;	
 }
-
 
 .color{
 	float:left;
 	margin-left: 30px;
 	margin-right:30px;
-	margin-top: 60px;
+	margin-top: 30px;
 }
 /****************SECTION CAMERA STUDIO CTA CONTENT****************/
 #wrapper-camera-studio{
 	width:100%;
-	height: 450px;
+	height: 400px;
 }
 #camera-img{
 	width: 50%;
 	height: 400px;
 	float: left;
-	background-color:red; 
+	background-image:url("images/home/camera-cta.jpg"); 
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+	background-size:cover;	
 }
 
 #studio-img{
 	width: 50%;
 	height: 400px;
 	float: right;
-	background-color: blue; 
+	background-image:url("images/home/studio_cta.jpg"); 
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+	background-size:cover;
 }
 
+.cta{
+	/*height: 75px;
+	width: 220px;*/
+	border: 3px solid #ffffff;
+	background-color: #383d40;
+	position:absolute;
+	left: 50%;
+	top:50%;
+	margin-top: -37.5px;
+	margin-left: -110px;
+	text-align: center;	
+}
+
+.cta-text{
+	font-size: 26px;
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 26px;
+	color: #ffffff;
+	text-align: center;
+	padding: 10px 40px;
+ 	display: inline-block;
+	cursor: pointer;
+}
+
+.cta-text:hover{
+	color: #e1df31;
+}
+/*.cta-positon{
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	margin-top:-13px;
+	margin-left: -70px;
+}*/
 /****************SECTION CURIOSITA CONTENT****************/
 #main-content-prefooter{
-	width: 1138px;
+	width: 1140px;
 	padding-left: 15px;
 	padding-right: 15px;
-	height: 100px;
 	margin-left: auto;
 	margin-right: auto;
+	text-align:center;
+	margin-top:90px;
+	margin-bottom:90px;
 }
 
-/****************SCETION FOOTER****************/
+
+
+/****************SECTION FOOTER****************/
 #footer-wrapper{
+	width:100%;
 	background-color: #383d40;
 }
 
+
 #site-footer{
-	width: 1138px;
+	width: 1140px;
 	padding-left: 15px;
 	padding-right: 15px;
-	height: 100px;
+	height:240px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+}
+
+#footer-logo{
+	padding-top:30px;
+	
+}
+
+#footer-contatti{
+	color:white;
+	margin-top: 30px;
+}
+
+#footer-contatti a{
+	color:white;
+}
+
+#footer-contatti p a.hover:hover {
+	color:#e1df31; 
+}
+
+#social-icons{
+	margin-left:auto;
+	margin-right: auto;
+	width:220px;
+	margin-top:30px;
+}
+
+.single-icon{
+	float:left;
+	margin:5px;	
+}
+
+
+
+/*** GALLERIA ***/
+#gallery-wrapper{
+	width:100%;
+	height:auto; 
+	margin-top: 100px;
+	text-align: center;	
+}
+
+#gallery-camera{
+	padding-bottom:90px;
+	padding-top:90px;
+}
+
+#gallery-studio{
+	padding-bottom:90px;
+}
+
+.row {
+	width: 1920px; 
+	height: 530px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-
-
-.single-icon{
-	display: inline-block;
+.large-img-1 {
+	width: 860px;
+	height: 500px;
+	float:left;
+	margin-right:15px;
+	background-color: aqua;
+}
+.regular-img1-1 {
+	width: 500px;
+	height: 500px;
+	float: left;
+	margin-right:15px;
+	margin-left: 15px;
+	background-color: aqua;
+}
+.regular-img2-1{
+	width: 500px;
+	height: 500px;
+	float: left;
+	margin-left: 15px;
+	background-color: aqua;
 }
 
+.regular-img1-2 {
+	width: 500px;
+	height: 500px;
+	float: left;
+	margin-right: 15px;
+	background-color: aqua;
+}
+ .large-img-2{
+	width: 860px;
+	height: 500px;
+	float:left;
+	margin-right:15px;
+	margin-left: 15px;
+	background-color: aqua;
+	}
+.regular-img2-2{
+	width: 500px;
+	height: 500px;
+	float: left;
+	margin-left: 15px;
+	background-color: aqua;
+	}
+/*#m {
+	width: 500px;
+	height: 500px;
+	float: left;
+	margin-right:15px;
+	background-color: aqua;
+	}
+#immagine6 {
+	width: 860px;
+	height: 500px;
+	float:left;
+	margin-right:15px;
+	margin-left: 15px;
+	background-color: aqua;
+	}
+#immagine7{
+	width: 500px;
+	height: 500px;
+	float: left;
+	margin-left: 15px;
+	background-color: aqua;
+	}
 
-
+#immagine8 {
+	width: 860px;
+	height: 500px;
+	float:left;
+	margin-right:15px;
+	background-color: aqua;
+	}
+#immagine9{
+	width: 500px;
+	height: 500px;
+	float: left;
+	margin-right: 15px;
+	margin-left: 15px;
+	background-color: aqua;
+	}
+#immagine10{
+	width: 500px;
+	height: 500px;
+	float: left;
+	margin-left: 15px;
+	background-color: aqua;
+	}
+*/
 
 
 
