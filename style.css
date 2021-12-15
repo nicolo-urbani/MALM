@@ -382,7 +382,7 @@ secondary-content-wrapper{
 /************************************STUDIO************************************/
 
 #intro-image-studio{
-	background-image:url("images/Studio/studio-copertina.jpg")
+	background-image:url("images/studio/studio-copertina.jpg")
 }
 .center-text{
 	position:absolute;
@@ -437,7 +437,7 @@ secondary-content-wrapper{
 	width: 50%;
 	height: 400px;
 	float: left;
-	background-image:url("images/Studio/dettagli_left.jpg");
+	background-image:url("images/studio/dettagli_left.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size:cover;	
@@ -446,7 +446,7 @@ secondary-content-wrapper{
 	width:50%;
 	height: 400px;
 	float: right;
-	background-image:url("images/Studio/dettagli_right.jpg");
+	background-image:url("images/studio/dettagli_right.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size:cover;	
